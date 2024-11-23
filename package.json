@@ -1,0 +1,45 @@
+{
+  "name": "pwts-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for testers",
+  "main": "./bin/run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "CLI"
+  ],
+  "author": "Maciej Kusz",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/node": "^18.19.64",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.15.0"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.0.31",
+    "oclif": "^4.15.24"
+  },
+  "bin": {
+    "pwts-cli": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "pwts-cli",
+    "commands": "./dist/commands",
+    "dirname": "pwts-cli",
+    "topicSeparator": " "
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "endOfLine": "auto",
+    "printWidth": 120
+  }
+}
