@@ -4,7 +4,9 @@
   "description": "CLI tool for testers",
   "main": "./bin/run.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx eslint",
+    "prebuild": "npm run lint",
+    "build": "npx shx rm -rf ./dist/* && npx tsc --build"
   },
   "keywords": [
     "CLI"
@@ -14,10 +16,12 @@
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@types/node": "^18.19.64",
+    "cowsayjs": "^2.0.0",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.12.0",
     "prettier": "^3.3.3",
+    "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.15.0"
