@@ -18,7 +18,7 @@
 const language = 'TypeScript';
 const difficulty = 'hard';
 
-let text = `${language} is a programming language ${difficulty} to learn`;
+let text = `${language} is a programming language ${difficulty} to learn!`;
 console.log(text);
 
 /* TASK 2:
@@ -52,6 +52,9 @@ console.log(text.includes('age'));
 
 const position = textLength / 2;
 console.log(position);
+
+console.log(text.substring(0, position));
+console.log(text.substring(position + 1));
 
 /* TASK 6:
   - print in the terminal a character that is in the middle of the text from task 1
